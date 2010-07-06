@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Django Model
+# key: model
+# group: model
+# contributor: Thejaswi Puthraya <thejaswi.puthraya@gmail.com>
+# --
+class ${1:Modelname}(models.Model):
+      """${1:$(capitalize text)} model"""
+
+      $0
+
+      def __unicode__(self):
+      	  return "%s" %self.id
